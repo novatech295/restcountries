@@ -1,0 +1,85 @@
+.country {
+    color: var(--brandColor);
+    background-color: var(--navbarColor);
+    border: solid 1px var(--navbarColor);
+    padding-bottom: 10px !important;
+}
+
+.Main-Mobile {
+    display: none;
+}
+
+.Main-Pc {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cc {
+    flex: 1 0 25%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+input {
+    background-color: var(--navbarColor) !important;
+    border-color: var(--navbarColor) !important;
+    color: var(--brandColor) !important;
+}
+
+.Main-Pc .country {
+    width: 200px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.Main-Pc .img {
+    width: 200px;
+    height: 150px;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: "Nunito Sans", sans-serif !important;
+    padding: 10px;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+}
+
+h5 {
+    font-family: "Nunito Sans", sans-serif !important;
+    font-weight: 500 !important;
+    font-optical-sizing: auto;
+    padding-left: 10px;
+    font-size: 12px !important;
+}
+
+@media (max-width: 550px) {
+    .Main-Pc {
+        display: none !important;
+    }
+
+    .Main-Mobile {
+       
+        display: flex !important;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: 20px !important;
+    }
+
+    .Main-Mobile .img,
+    .Main-Mobile .country {
+        width: 80cqi !important;
+    }
+}
+
+@media (max-width: 300px) {
+    .Main-Mobile {
+        margin-left: 12px !important;
+    }
+}
+
+@media (max-width: 200px) {
+    .Main-Mobile {
+        margin-left: 7px !important;
+    }
+}

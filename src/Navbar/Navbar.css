@@ -1,0 +1,79 @@
+nav {
+    background-color: var(--navbarColor) !important;
+
+
+}
+
+.navbar-brand {
+    color: var(--brandColor) !important;
+    margin-left: 10dvw !important;
+    font-size: 20px !important;
+}
+
+.dark-light {
+    float: right !important;
+    border: none;
+    background-color: transparent;
+}
+
+.moon {
+    margin-right: 5px;
+}
+
+button span {
+    font-size: 16px;
+}
+
+@media (max-width:500px) {
+    nav {
+        height: 50px !important;
+    }
+
+    .dark-light {
+        position: absolute !important;
+        right: 4% !important;
+        top: 23% !important;
+    }
+
+    .navbar-brand {
+        margin-left: 10px !important;
+        font-size: 17px !important;
+
+    }
+
+    button span {
+        font-size: 13px !important;
+    }
+}
+
+@media (max-width:300px) {
+
+    .navbar-brand {
+        font-size: 13px !important;
+    }
+
+    button span {
+        font-size: 11px !important;
+        margin: 0px !important;
+    }
+
+    .moon {
+        margin-right: 2px !important;
+    }
+}
+
+@media (max-width:230px) {
+    .navbar-brand {
+        margin-left: 2px !important;
+        font-size: 9px !important;
+    }
+
+    button span {
+        font-size: 8px !important;
+        margin: 0px !important;
+    }
+
+    .moon {
+        margin-right: 0px !important;
+    }
+}

@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import { createContext, Fragment, useState } from 'react';
+import Main from './Main/Main.js';
+import NavBar from './Navbar/Navbar';
 
+import { Routes, Route } from 'react-router-dom';
+import Details from './Details/Details';
+export const CounterContext = createContext();
 function App() {
+  const [count, setCount] = useState("Filter by Region");
+  const [search, setSearch] = useState("");
+  const [isDarkMode, setIsDarkMode] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ 
+      <CounterContext.Provider value={{ count, setCount, search, setSearch, isDarkMode, setIsDarkMode }}>
+        <NavBar />
+        <Routes>
+          <Route path='rest-countries' element={<Main />}></Route>
+          <Route path='rest-countries/details/:alpha3Code' element={<Details />}></Route>
+        </Routes>
+      </CounterContext.Provider>
   );
 }
 

@@ -1,0 +1,42 @@
+.form-select{
+    background-color: var(--navbarColor) !important;
+    border-color:var(--navbarColor) !important ;
+    color: var(--brandColor) !important;
+    max-width: 220px !important;
+    height: 40px;
+}
+@media (max-width:775px){
+    .form-selector{
+      margin-top: 15px !important;
+      
+    }
+
+    .form-select{
+        font-size: 14px !important;
+        margin-top: 10px !important;
+        max-width:200px !important ;
+      margin-left: 20px !important;
+      width: 150px !important;
+    }
+    
+
+  }
+  @media (max-width:550px){
+    .form-select{
+      margin-bottom: 10px !important;
+    font-size: 10px !important;
+      margin-left: 12px !important;
+      width: 120px !important;
+    }
+  
+  }
+    @media (max-width:200px){
+      .form-select{
+        font-size: 7px !important;
+        margin-left: 5px !important;  
+        width: 100px !important;
+        height: 30px;
+
+      }
+
+    }
