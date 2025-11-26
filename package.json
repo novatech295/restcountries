@@ -1,5 +1,6 @@
 {
   "name": "restcountries",
+   "homepage": "https://novatech295.github.io/restcountries",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
